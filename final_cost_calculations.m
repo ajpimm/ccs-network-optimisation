@@ -14,8 +14,8 @@ pipe_flows = get_pipe_flows(edges,source_flows);
 % Calculate the cost of each pipe and total cost.
 junction_coords = all_coords(num_sources+1:end-1,:);
 [total_cost,pipe_costs,pipe_lengths,pipe_diameters]...
-    = cost_fun_w_mass_flows_no_scaling(reshape(junction_coords',[],1),edges,reshape(source_coords',[],1),...
-    reshape(reservoir_coords',[],1),pipe_flows);
+    = cost_fun_w_mass_flows(reshape(junction_coords',[],1),edges,reshape(source_coords',[],1),...
+    reshape(reservoir_coords',[],1),pipe_flows,1);
 
 total_cost = total_cost + 1244724 + 111907;
 
