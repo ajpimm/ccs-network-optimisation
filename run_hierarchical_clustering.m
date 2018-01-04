@@ -82,7 +82,7 @@ title(sprintf('Cost = $%.2fm. Method used = %s',cost_min/1e6,method_used))
 
 % Plot a dendrogram of the lowest-cost network.
 % figure
-% Y = calc_dists(source_coords,reservoir_coords,source_flows);
+% Y = calc_dists(source_coords,reservoir_coords);
 % Z = linkage(Y,method);
 % dendrogram(Z)
 % grid on
